@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CV Emmanuel Dereudre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Palette de couleurs */
+        :root {
+            --primary-color: #2C3E50; /* Bleu foncé */
+            --accent-color: #3498DB; /* Bleu clair */
+            --background-color: #ECF0F1; /* Gris clair */
+            --card-background: #FFFFFF; /* Blanc pour les cartes */
+            --text-color: #333;
+            --highlight-color: #003087; /* Bleu RAL 5002 */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        /* Grille pour les cartes */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Style des cartes */
+        .card {
+            background-color: var(--card-background);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            white-space: pre-wrap; /* Ajout pour le retour à la ligne */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .card h2:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background-color: var(--highlight-color);
+        }
+
+        .card p, .card ul {
+            font-size: 1rem;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card ul li:before {
+            content: "✓";
+            color: var(--highlight-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Section contact */
+        .contact {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--highlight-color);
+        }
+
+        /* Icônes */
+        .icon {
+            width: 120px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Pied de page */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- En-tête avec titre et description -->
+        <div class="header">
+            <h1>Emmanuel Dereudre</h1>
+            <p>Expert en gestion managériale et logistique avec plus de 15 ans d'expérience, spécialisé dans le service client, la performance et la sécurité</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact">
+            <div class="contact-info">
+                <p><strong>Adresse :</strong> 16 rue des Barbières, 38790 Diémoz</p>
+                <p><strong>Téléphone :</strong> 06.68.99.02.21</p>
+                <p><strong>Email :</strong> <a href="mailto:dereudre@gmail.com">dereudre@gmail.com</a></p>
+                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/emmanuel-dereudre-24a66ab8/">linkedin.com/emmanuel-dereudre</a></p>
+            </div>
+        </div>
+
+        <!-- Grille de sections (cartes) -->
+        <div class="grid">
+            
+            <!-- Carte 1: Expérience Professionnelle -->
+            <div class="card">
+                <img src="images/experience-icon.png" alt="Icône Expérience" class="icon">
+                <h2>Expérience Professionnelle</h2>
+                <ul>
+                    <li><strong>Directeur de site - <a href="https://www.rhenus.com" target="_blank">RHENUS</a></strong> (06/2023 à ce jour)
+                        <p>Responsable d'un centre de 28 000 m² pour 3 clients majeurs, avec un focus sur la performance opérationnelle.
+                        Optimisation des coûts et amélioration des processus de transport tout en garantissant la sécurité des opérations.
+                        Redressement du compte d’exploitation.
+                        Mise en place de solutions logistiques sur mesure pour répondre aux exigences spécifiques des clients, garantissant un haut niveau de service.
+                        Gestion des équipes dans un environnement en constante évolution avec des objectifs de performance élevés.
+                        </p>
+                    </li>
+                    <li><strong>Directeur de site - <a href="https://www.rexel.fr" target="_blank">REXEL</a></strong> (05/2018 à 06/2023)
+                        <p>Gestion de plusieurs sites logistiques avec une approche orientée vers la satisfaction client et la réduction des coûts.
+                        Réorganisation complète pour améliorer l'efficacité du transport, avec une réduction des délais et une optimisation des coûts d'exploitation.
+                        Mise en place du Lean Management pour optimiser la productivité tout en respectant les normes de sécurité.
+                        Supervision d’équipes de 150 personnes, avec un accent sur l'amélioration continue et l’atteinte des objectifs clients.
+                        </p>
+                    </li>
+                    <li><strong>Responsable Exploitation - REXEL Roissy en Brie (77)</strong> (09/2016 à 04/2018)
+                        <p>Reprise d'un site en difficultés avec un taux de service client faible.
+                        Optimisation des processus logistiques et des plannings pour accroître la performance et garantir la satisfaction client.
+                        Mise en place de KPI pour suivre la performance des équipes et des coûts, avec un focus sur la réduction des délais et l'amélioration de la qualité du service.
+                        </p>
+                    </li>
+                    <li><strong>Responsable Exploitation - <a href="https://www.gxo.com" target="_blank">XPO Logistics (aujourd'hui GXO)</a></strong> (09/2014 à 09/2016)
+                        <p>Ouverture d'un nouveau site de 27 000 m², avec une gestion proactive des équipes et des ressources pour répondre aux exigences strictes des clients.
+                        Optimisation des flux logistiques pour garantir une performance opérationnelle élevée tout en maintenant des niveaux de satisfaction client exceptionnels.
+                        Gestion des coûts opérationnels et amélioration des processus de sécurité pour assurer la conformité avec les réglementations.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+ <!-- Carte 2: Compétences -->
+            <div class="card">
+                <img src="images/skills-icon.png" alt="Icône Compétences" class="icon">
+                <h2>Compétences</h2>
+                <ul>
+                    <li><strong>Amélioration continue orientée client :</strong> Mise en place de démarches Lean et DMAIC pour optimiser les processus opérationnels, réduire les délais de livraison, et améliorer l'expérience client globale.</li>
+                    <li><strong>Gestion de la performance :</strong> Suivi et analyse des KPIs pour garantir des niveaux de performance élevés, notamment en termes de productivité, de sécurité et de qualité de service.</li>
+                    <li><strong>Optimisation des flux logistiques :</strong> Expertise dans la gestion des flux tendus et la réduction des temps de cycle pour offrir un service client optimal avec une gestion efficace des coûts et des ressources.</li>
+                    <li><strong>Management d'équipes tournées vers la satisfaction client :</strong> Encadrement et formation d'équipes pour renforcer l'engagement envers le service client tout en optimisant la performance et la sécurité.</li>
+                    <li><strong>Outils de gestion et d'analyse :</strong> Maîtrise des systèmes Infolog et Réflex Suite pour améliorer la gestion des commandes, des coûts et des stocks, assurant un service client sans faille grâce à une visibilité en temps réel.</li>
+                    <li><strong>Gestion de projets clients et orientation business :</strong> Conduite de projets stratégiques pour garantir une adaptation agile aux besoins des clients, en intégrant les aspects de coût, de transport et de sécurité dans les solutions proposées.</li>
+                </ul>
+            </div>
+
+            <!-- Carte 3: Diplômes et Formations -->
+            <div class="card">
+                <img src="images/diploma-icon.png" alt="Icône Diplômes" class="icon">
+                <h2>Diplômes & Formations</h2>
+                <ul>
+                    <li>2021 : Certification CEGOS « Analyse financière »</li>
+                    <li>2019 : Formation Yellow Belt & Lean Academy</li>
+                    <li>2009 : DU Gestion Opérations Logistiques</li>
+                    <li>2008 : DUT Techniques de Commercialisation</li>
+                    <li>TOEIC : 840/990</li>
+                </ul>
+            </div>
+
+           
+
+            <!-- Carte 4: Centres d'intérêt -->
+            <div class="card">
+                <img src="images/interests-icon.png" alt="Icône Centres d'intérêt" class="icon">
+                <h2>Centres d’intérêt</h2>
+                <ul>
+                    <li>DIY</li>
+                    <li>High-tech</li>
+                    <li>Musique (guitariste)</li>
+		    <li>Sport loisir</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="footer">
+        <p>© 2024 Emmanuel Dereudre</p>
+    </div>
+
+</body>
+</html>
