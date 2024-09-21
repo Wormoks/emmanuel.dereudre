@@ -23,7 +23,7 @@
             margin: 0;
             padding: 0;
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.4; /* Réduction des interlignes globales */
         }
 
         .container {
@@ -34,7 +34,7 @@
 
         .header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px; /* Réduction de l'espace sous l'en-tête */
         }
 
         .header h1 {
@@ -49,35 +49,35 @@
             color: var(--accent-color);
         }
 
-        /* Grille pour les cartes */
+        /* Flexbox pour une disposition verticale */
         .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Réduction de l'espace entre les cartes */
         }
 
         /* Style des cartes */
         .card {
             background-color: var(--card-background);
             border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 15px; /* Réduction de l'espace à l'intérieur des cartes */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Réduction de l'ombre */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            white-space: pre-wrap; /* Ajout pour le retour à la ligne */
+            white-space: pre-wrap;
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         .card h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
             color: var(--primary-color);
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Réduction de l'espace sous les titres */
             position: relative;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
 
         .card h2:before {
@@ -86,12 +86,13 @@
             bottom: 0;
             left: 0;
             width: 50px;
-            height: 4px;
+            height: 3px;
             background-color: var(--highlight-color);
         }
 
         .card p, .card ul {
             font-size: 1rem;
+            line-height: 1.4; /* Réduction des interlignes dans les cartes */
         }
 
         .card ul {
@@ -100,7 +101,7 @@
         }
 
         .card ul li {
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Réduction de l'espace entre les éléments de liste */
             position: relative;
             padding-left: 20px;
         }
@@ -116,7 +117,7 @@
         /* Section contact */
         .contact {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 30px; /* Réduction de l'espace sous la section contact */
         }
 
         .contact-info p {
@@ -135,15 +136,15 @@
 
         /* Icônes */
         .icon {
-            width: 120px;
-            height: 80px;
-            margin-bottom: 20px;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px; /* Réduction de l'espace sous les icônes */
         }
 
         /* Pied de page */
         .footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px; /* Réduction de l'espace au-dessus du pied de page */
             padding: 20px;
             background-color: var(--primary-color);
             color: white;
@@ -166,7 +167,7 @@
                 <p><strong>Adresse :</strong> 16 rue des Barbières, 38790 Diémoz</p>
                 <p><strong>Téléphone :</strong> 06.68.99.02.21</p>
                 <p><strong>Email :</strong> <a href="mailto:dereudre@gmail.com">dereudre@gmail.com</a></p>
-                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/emmanuel-dereudre-24a66ab8/">linkedin.com/emmanuel-dereudre</a></p>
+                <p><strong>LinkedIn :</strong> <a href="https://linkedin.com/emmanuel-dereudre">linkedin.com/emmanuel-dereudre</a></p>
             </div>
         </div>
 
@@ -175,13 +176,13 @@
             
             <!-- Carte 1: Expérience Professionnelle -->
             <div class="card">
-                <img src="experience-icon.png" alt="Icône Expérience" class="icon">
+                <img src="images/experience-icon.png" alt="Icône Expérience" class="icon">
                 <h2>Expérience Professionnelle</h2>
                 <ul>
                     <li><strong>Directeur de site - <a href="https://www.rhenus.com" target="_blank">RHENUS</a></strong> (06/2023 à ce jour)
                         <p>Responsable d'un centre de 28 000 m² pour 3 clients majeurs, avec un focus sur la performance opérationnelle.
                         Optimisation des coûts et amélioration des processus de transport tout en garantissant la sécurité des opérations.
-                        Redressement du compte d’exploitation.
+                        Redressement du compte d’exploitation avec un excédent de +2M€ en un an.
                         Mise en place de solutions logistiques sur mesure pour répondre aux exigences spécifiques des clients, garantissant un haut niveau de service.
                         Gestion des équipes dans un environnement en constante évolution avec des objectifs de performance élevés.
                         </p>
@@ -208,9 +209,22 @@
                 </ul>
             </div>
 
- <!-- Carte 2: Compétences -->
+            <!-- Carte 2: Diplômes et Formations -->
             <div class="card">
-                <img src="skills-icon.png" alt="Icône Compétences" class="icon">
+                <img src="images/diploma-icon.png" alt="Icône Diplômes" class="icon">
+                <h2>Diplômes & Formations</h2>
+                <ul>
+                    <li>2021 : Certification CEGOS « Analyse financière »</li>
+                    <li>2019 : Formation Yellow Belt & Lean Academy</li>
+                    <li>2009 : DU Gestion Opérations Logistiques</li>
+                    <li>2008 : DUT Techniques de Commercialisation</li>
+                    <li>TOEIC : 840/990</li>
+                </ul>
+            </div>
+
+            <!-- Carte 3: Compétences -->
+            <div class="card">
+                <img src="images/skills-icon.png" alt="Icône Compétences" class="icon">
                 <h2>Compétences</h2>
                 <ul>
                     <li><strong>Amélioration continue orientée client :</strong> Mise en place de démarches Lean et DMAIC pour optimiser les processus opérationnels, réduire les délais de livraison, et améliorer l'expérience client globale.</li>
@@ -222,30 +236,14 @@
                 </ul>
             </div>
 
-            <!-- Carte 3: Diplômes et Formations -->
-            <div class="card">
-                <img src="diploma-icon.png" alt="Icône Diplômes" class="icon">
-                <h2>Diplômes & Formations</h2>
-                <ul>
-                    <li>2021 : Certification CEGOS « Analyse financière »</li>
-                    <li>2019 : Formation Yellow Belt & Lean Academy</li>
-                    <li>2009 : DU Gestion Opérations Logistiques</li>
-                    <li>2008 : DUT Techniques de Commercialisation</li>
-                    <li>TOEIC : 840/990</li>
-                </ul>
-            </div>
-
-           
-
             <!-- Carte 4: Centres d'intérêt -->
             <div class="card">
-                <img src="interests-icon.png" alt="Icône Centres d'intérêt" class="icon">
+                <img src="images/interests-icon.png" alt="Icône Centres d'intérêt" class="icon">
                 <h2>Centres d’intérêt</h2>
                 <ul>
-                    <li>DIY</li>
+                    <li>Famille</li>
                     <li>High-tech</li>
                     <li>Musique (guitariste)</li>
-		    <li>Sport loisir</li>
                 </ul>
             </div>
         </div>
@@ -253,7 +251,7 @@
 
     <!-- Pied de page -->
     <div class="footer">
-        <p>© 2024 Emmanuel Dereudre</p>
+        <p>© 2023 Emmanuel Dereudre</p>
     </div>
 
 </body>
